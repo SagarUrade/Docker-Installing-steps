@@ -1,0 +1,45 @@
+refer hear --https://directdevops.blog/2024/10/03/devops-classroom-notes-03-oct-2024/
+
+
+ ** Install docker in linux  Script  
+ https://get.docker.com/
+
+step1 : url -fsSL https://get.docker.com -o install-docker.sh
+ 
+step2 :  sudo sh install-docker.sh
+
+** NOw add the current user to  docker group 
+
+step3:   sudo usermod -aG docker $USER
+
+  example: sudo usermod -aG docker ubuntu
+
+step4: Log out and log back in instance
+
+
+** Docker Package based installation (not important)
+ https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
+ 
+** running  docker commands after install-docker
+ 
+sudo docker info 
+docker run hello-world 
+docker run --help
+docker container --help
+
+docker run [ IMAGE NAME ] 
+create and run a new container from an image
+
+docker run nginx
+
+docker run -d nginx  
+-d : This option stands for "detached mode."
+
+* every con  have unique id & unique name , if we don't create  docker will create .
+
+can download image from hear 
+https://hub.docker.com/
+
+to run 
+https://labs.play-with-docker.com/
