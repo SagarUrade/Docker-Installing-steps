@@ -4,7 +4,7 @@ refer hear --https://directdevops.blog/2024/10/03/devops-classroom-notes-03-oct-
  ** Install docker in linux  Script  
  https://get.docker.com/
 
-step1 : url -fsSL https://get.docker.com -o install-docker.sh
+step1 : curl -fsSL https://get.docker.com -o install-docker.sh
  
 step2 :  sudo sh install-docker.sh
 
